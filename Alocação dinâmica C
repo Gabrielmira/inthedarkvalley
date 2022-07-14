@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+   int *p = (int *) malloc(22*sizeof(int));
+   p = (int *) realloc (p,0);
+   free(p);
+   
+   system("pause");
+   return 0
+}
